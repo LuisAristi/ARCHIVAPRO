@@ -12,7 +12,6 @@ public class IngresarUsuario {
         System.out.print("Contraseña: ");
         String contrasena = scanner.nextLine();
 
-        // Aquí se debería validar con la base de datos o archivo de usuarios
         if (validarUsuario(nombreUsuario, contrasena)) {
             System.out.println("Inicio de sesión exitoso.");
             return true;
@@ -23,7 +22,6 @@ public class IngresarUsuario {
     }
 
     private static boolean validarUsuario(String nombreUsuario, String contrasena) {
-        // Lógica para validar credenciales (base de datos o archivo)
         return true;  // Se asume que se valida correctamente
     }
 }
