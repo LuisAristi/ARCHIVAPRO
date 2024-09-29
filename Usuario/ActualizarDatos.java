@@ -11,7 +11,6 @@ public class ActualizarDatos {
         System.out.print("Nuevo número de celular: ");
         String nuevoCelular = scanner.nextLine();
 
-        // Lógica para actualizar los datos del usuario en la base de datos o archivo
         System.out.println("Datos actualizados exitosamente.");
     }
 }//esta huevada me dio paja extenderla, entonces XD
