@@ -7,7 +7,7 @@ public class Usuario {
     private String contrasena;
     private String tipoDeUsuario;
 
-    // Constructor con todos los parámetros
+    //constructor
     public Usuario(String nombreCompleto, int edad, String correo, String celular, String nombreUsuario, String contrasena) {
         this.nombreCompleto = nombreCompleto;
         this.edad = edad;
@@ -15,7 +15,8 @@ public class Usuario {
         this.celular = celular;
         this.nombreUsuario = nombreUsuario;
         this.contrasena = contrasena;
-
+        
+        //contraseña para administrador
         if (contrasena.equals("SoulSociety")) {
             this.tipoDeUsuario = "Administrador";
         } else {
@@ -23,7 +24,7 @@ public class Usuario {
         }
     }
 
-    // Getters y Setters para acceder a las propiedades
+    // Getters y Setters
     public String getTipoDeUsuario() {
         return tipoDeUsuario;
     }
