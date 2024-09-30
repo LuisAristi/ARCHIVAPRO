@@ -10,5 +10,4 @@ package net.gestiondedocumental.main;
  */
 public class AdministracionDeDocumentos {
     Documento documento = new Documento();
-    
 }

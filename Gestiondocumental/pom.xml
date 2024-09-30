@@ -12,4 +12,40 @@
         <exec.mainClass>net.gestiondedocumental.main.Main</exec.mainClass>
     </properties>
     <name>Gestiondocumental</name>
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources/images</directory>
+                <includes>
+                    <include>**/*.png</include>  <!-- Include all PNG files -->
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <!-- Configuración del plugin maven-resources-plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.2.0</version>
+            </plugin>
+
+            <!-- Configuración del plugin maven-jar-plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <includes>
+                        <include>**/*.class</include>
+                        <include>**/*.png</include>
+                    </includes>
+                    <archive>
+                        <manifestEntries>
+                            <Main-Class>${exec.mainClass}</Main-Class>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
