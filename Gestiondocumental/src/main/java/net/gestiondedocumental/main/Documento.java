@@ -4,7 +4,7 @@
  */
 package net.gestiondedocumental.main;
 
-/**
+/** 
  *
  * @author LAB_REDES
  */
@@ -135,5 +135,5 @@ public class Documento {
 
     public double getValoracion() {
         return valoracion;
-    }
+    } 
 }

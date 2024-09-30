@@ -17,7 +17,7 @@ public class Usuario {
         this.contrasena = contrasena;
         
         //contraseña para administrador
-        if (contrasena.equals("SoulSociety")) {
+        if (contrasena.equals("Luisesjoto")) { 
             this.tipoDeUsuario = "Administrador";
         } else {
             this.tipoDeUsuario = "Usuario";
